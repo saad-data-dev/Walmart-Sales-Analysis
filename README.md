@@ -42,7 +42,8 @@ Walmart-Sales-Analysis/
 ├── notebooks/                  
 │   └── walmart_analysis.ipynb
 │
-├── README.md                   
+├── Insights.md
+├── README.md                  
 └── requirements.txt
 ```
 
