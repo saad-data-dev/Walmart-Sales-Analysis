@@ -1,6 +1,19 @@
 # 🏬 Walmart Sales Analysis & Forecasting  
 ### End-to-End Data Analysis • Machine Learning • Business Insights
 
+## 🔧 Project Summary
+
+**Objective:** Analyze Walmart’s historical weekly sales to identify patterns, trends, and factors affecting store performance.
+
+**Hypotheses:** Weekly sales are influenced by store location, seasonality, and external factors such as temperature, fuel price, CPI, and unemployment.
+
+**Model/Analysis:** Exploratory data analysis using Python, Pandas, Matplotlib, and Seaborn, including distribution, correlation, and trend analysis.
+
+**Key Results:** Top-performing stores were identified, sales show clear seasonal patterns, and external factors like temperature and CPI moderately affect weekly sales.
+
+**Recommendations:** Focus inventory and marketing efforts on high-performing stores and peak weeks, monitor external factors for predictive insights, and consider seasonal patterns for staffing and promotions.
+
+
 ## 📌 Project Overview
 This project analyzes weekly retail sales from multiple Walmart stores in the US.  
 The goal is to understand the key drivers behind sales variations and build a predictive model to estimate future revenue.
