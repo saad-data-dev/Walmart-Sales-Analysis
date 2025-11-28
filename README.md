@@ -1,24 +1,22 @@
-# Walmart Sales Analysis 📈
+# 🏬 Walmart Sales Analysis & Forecasting  
+### End-to-End Data Analysis • Machine Learning • Business Insights
 
+## 📌 Project Overview
+This project analyzes weekly retail sales from multiple Walmart stores in the US.  
+The goal is to understand the key drivers behind sales variations and build a predictive model to estimate future revenue.
 
----
+The analysis includes:
+- Data cleaning & preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Correlation and feature impact  
+- Machine learning model for sales forecasting  
+- Business insights & recommendations  
 
-## Project Overview
-
-**Walmart Sales Analysis** is a comprehensive data analysis project on Walmart’s historical weekly sales.  
-The goal is to generate **actionable insights** through visualizations and quantitative analysis, including:
-
-- Distribution of weekly sales  
-- Sales trends over time  
-- Store-level performance comparison  
-- Correlation with external factors (temperature, fuel price, CPI, unemployment)  
-- Seasonality analysis  
-
-This project helps identify patterns, inform **strategic retail decisions**, and serve as a foundation for forecasting and operational planning.
+This project demonstrates essential skills for **Data Analyst, Data Scientist, and Business Intelligence roles**.
 
 ---
 
-## Repository Structure
+## 📂 Project Structure
 
 ```text
 Walmart-Sales-Analysis/
@@ -47,37 +45,145 @@ Walmart-Sales-Analysis/
 ├── README.md                   
 └── requirements.txt
 ```
-## 🔍 Key Features & Analyses
-
-1. **Weekly Sales Distribution** – Histogram with KDE  
-   ![Weekly Sales Distribution](visualization/distribution_of_weekly_sales.png)
-
-2. **Store Performance** – Total weekly sales by store  
-   ![Sales by Store](visualization/total_weekly_sales_by_store.png)
-
-3. **Time Series Analysis** – Weekly and monthly sales trends  
-   ![Sales Over Time](visualization/total_weekly_sales_over_time.png)  
-   ![Monthly Sales Trend](visualization/monthly_sales_trend.png)
-
-4. **Correlation & External Factors** – Analysis of relationships between sales and numeric variables  
-   ![Correlation Matrix](visualization/correlation_matrix.png)
-
-5. **Seasonality Analysis** – Average weekly sales patterns  
-   ![Seasonality](visualization/average_weekly_sales_by_week_of_year.png)
-
-6. **Exported Visualizations** – All plots are automatically saved in the `visualization/` directory  
 
 ---
 
-## Technologies
+## 📊 Dataset Description
+The dataset contains **historical weekly sales** for multiple Walmart departments.  
+**Main features include:**
 
-- **Python 3.x**  
-- **Pandas** – Data manipulation  
-- **Matplotlib** & **Seaborn** – Visualization  
-- **Jupyter Notebook** – Interactive exploration  
+- `Store` : Store ID  
+- `Date` : Week of sales  
+- `Weekly_Sales` : Total sales for that week  
+- `Holiday_Flag` : Holiday week indicator  
+- `Temperature` : Regional temperature  
+- `Fuel_Price` : Cost of fuel  
+- `CPI` : Consumer Price Index  
+- `Unemployment` : Regional unemployment rate  
 
-Install dependencies with:
+The dataset allows both **time-series and regression analysis**.
+
+---
+
+## 🧼 1. Data Cleaning  
+Key steps performed:
+
+- Converted `Date` to datetime format  
+- Extracted `Year`, `Month`, and `Week`  
+- Checked for missing values (none found)  
+- Removed duplicates  
+- Verified outliers for sales, CPI, fuel price  
+- Normalized column names  
+- Prepared clean dataset for modeling  
+
+---
+
+## 🔍 2. Exploratory Data Analysis (EDA)
+
+### ✔ Sales trends over time  
+Analyzed weekly revenue to detect seasonality, peaks, and drops.
+
+### ✔ Correlation matrix  
+Identified relationships between variables such as CPI, Fuel Price, Temperature, and Sales.
+
+### ✔ Store-level performance  
+Compared performance across Walmart stores to detect high- and low-performing locations.
+
+### ✔ Impact of holidays  
+Quantified the sales differences between holiday weeks and normal weeks.
+
+📌 *All visualizations are available in the `visualization/` folder.*
+
+---
+
+## 🤖 3. Machine Learning Model
+
+A regression model was trained to predict weekly sales.
+
+### 📐 Model Used
+- **Linear Regression**
+- (optional) Random Forest Regressor
+- (optional) XGBoost Regressor
+
+### 📊 Metrics evaluated:
+- R² Score  
+- MAE (Mean Absolute Error)  
+- RMSE  
+
+The model achieves **solid predictive performance**, demonstrating that external economic factors significantly influence store revenue.
+
+---
+
+## 💡 4. Business Insights
+
+Key insights extracted from the analysis:
+
+- **Holiday weeks systematically show higher sales**, confirming the importance of seasonal promotions.
+- **Fuel Price and CPI show moderate correlation with sales**, suggesting sensitivity to economic conditions.
+- **Certain stores consistently outperform others**, indicating location-based advantages.
+- **Temperature has a seasonal effect** on sales, depending on the region and time of the year.
+- **Unemployment impacts purchasing power**, and indirectly affects weekly sales.
+
+These insights can help retail managers optimize marketing, plan inventory, and schedule promotions.
+
+---
+
+## 🧠 Conclusion
+This project demonstrates the full data workflow:
+- Cleaning  
+- Analysis  
+- Modeling  
+- Interpretation  
+
+It showcases strong analytical and technical skills relevant for **Data Analyst, Data Scientist, and BI roles**.
+
+Future improvements may include:
+- Deep learning time-series models (LSTM)  
+- Store-specific forecasting  
+- Deployment via a dashboard (Power BI or Streamlit)
+
+---
+# ▶️ How to Run the Project
+## 1️⃣ Installation & Reproducibility
 
 ```bash
+git clone https://github.com/saad-data-dev/Walmart-Sales-Analysis.git
+cd Walmart-Sales-Analysis
 pip install -r requirements.txt
+```
+
+## 2️⃣ Run the notebook
+Open:
+notebooks/analysis.ipynb
+Then run all cells.
+---
+
+## 🧑‍💻 Author
+
+**Saad EL FATINE**  
+Data Analyst / Data Scientist  
+
+📩 **Email    :** e.saad@etudiant.edcparis.edu  
+🔗 **GitHub   :** https://github.com/saad-data-dev  
+🔗 **LinkedIn :** https://www.linkedin.com/in/saad-el-fatine  
+
+---
+
+## 🎉 Final Notes
+
+This project demonstrates:
+
+- **Data Cleaning**
+- **Exploratory Data Analysis (EDA)**
+- **Business Insights & Interpretation**
+- **Feature Engineering**
+- **Machine Learning Modeling**
+- **Data Visualization**
+- **Project Structuring**
+- **Professional Documentation**
+
+---
+
+
+
      
